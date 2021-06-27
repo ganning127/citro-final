@@ -9,7 +9,8 @@ let descriptions = {
   "Plastic": "This is plastic! You can safely <b>recycle this in the blue or green recycle bin</b>. Some grocery stores even offer plastic bag collection, so you can take these items there and get them safely recycled and reused.",
   "Glass": "This is glass! Similar to plastic, glass is typically recyclable. Just <b>place this item in the blue or green recycling bin</b>, and it will be repurposed for another day!",
   "Paper": "This is paper! You can easily recycle paper by <b>putting it in the blue or green recycle bin</b>. Recycled paper is often made into greeting cards, cardboard, and newspaprs!",
-  "Metal": "This is metal! Almost all metals are recyclable, just <b>put it in your blue or green recycling bin</b>. Recycled metals are often used extensively in the construction industry in projects such as roads and bridges."
+  "Metal": "This is metal! Almost all metals are recyclable, just <b>put it in your blue or green recycling bin</b>. Recycled metals are often used extensively in the construction industry in projects such as roads and bridges.",
+  "Unknown": "Hmmm, we couldn't detect what that was. Maybe try another image?"
 }
 
 let img = {
@@ -17,7 +18,8 @@ let img = {
   "Plastic": "../img/plastic.png",
   "Glass": "../img/glass.png",
   "Paper": "../img/paper.png",
-  "Metal": "../img/metal.png"
+  "Metal": "../img/metal.png",
+  "Unknown": "../img/qmark.png"
 }
 
 $('#file-upload').on('change', function() {
@@ -52,6 +54,12 @@ document.getElementById("result").addEventListener("click", () => {
     })
 })
 
+document.getElementById("again").addEventListener("click", () => {
+  scrollTo("navbar-main")
+  document.getElementById("results-section").classList.add("hidden");
+})
+
+
 function setActions(type) {
   actions.result = type;
   console.log(type)
@@ -79,3 +87,5 @@ function showElements() {
 function scrollTo(hash) {
   location.hash = "#" + hash;
 }
+
+

@@ -4,6 +4,7 @@ html {
 
 nav {
 	position: fixed;
+	background-color: white;
 }
 
 #navbar-main {
@@ -66,3 +67,15 @@ a.nav-link {
 .separator {
 	height: 10rem;
 }
+
+hr { 
+	margin-bottom: 5rem;
+}
+
+.dk-gr {
+	color: #006400;
+}
+
+.grey {
+	color: 	#484848
+  }

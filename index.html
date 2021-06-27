@@ -20,20 +20,20 @@
        </button>
        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav nav-pills">
-             <li class="nav-item">
-                <a class="nav-link"  href="index.html">Home</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="learn.html">Learn</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="mailto:ganningxu@gmail.com">Contact</a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="https://search.earth911.com/">Recycling Centers Near You</a>
+            <li class="nav-item">
+              <a class="nav-link"  href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="https://search.earth911.com/" target="_blank">Recycling Centers</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="mailto:ganningxu@gmail.com">Contact</a>
            </li>
 
           </ul>
@@ -48,7 +48,7 @@
           <div class="col-sm-5 d-flex align-items-center">
             <div class="content">
               <h1 class="display-2">EnviroHelp</h1>
-              <p class="lead">Submit an image of "trash", wait 4 seconds, and get how to sort it!</p>
+              <p class="lead">Submit an image of "trash", wait 5 seconds, and get how to sort it!</p>
 
               <form action = "http://localhost:5000/determine" method = "POST" 
               enctype = "multipart/form-data">
@@ -92,8 +92,9 @@
           <img src="./img/logo.png" alt="" class="img-fluid" id="result-img">
         </div>
       </div>
-      
+      <button class="mt-5 btn btn-outline-success form-button" id="again">Search again</button>
     </div>
+    
   </section>
 
   <div class="separator"></div>
