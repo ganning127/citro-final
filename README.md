@@ -13,3 +13,7 @@ EnviroHelp is a web app which educates people about recycling and how everyone c
 - JavaScript (calls our Python API)
 - HTML
 - CSS
+
+## How To Run it
+1. Run uploader.py locally, which may require you to download certain python libraries like flask and flask_cors
+2. Then, double click on index.html
