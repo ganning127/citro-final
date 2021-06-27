@@ -79,3 +79,32 @@ hr {
 .grey {
 	color: 	#484848
   }
+
+.dk-red {
+	color: #4d0000
+}
+
+.hover-effect {
+	border-radius: 20px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: all .25s;
+}
+
+.hover-effect:hover {
+	background-color: #006400;
+	color: white;
+	letter-spacing: 5px;
+}
+
+.hover-effect {
+	margin: 1rem auto 0 auto;
+	border: 2px solid #006400;
+	font-size: 1.3rem;
+	color: #006400;
+}
+
+.active {
+	background-color: rgba(210, 255, 210, 0.5) !important;
+	color: #006400 !important;
+}
