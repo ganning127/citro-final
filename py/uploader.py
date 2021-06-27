@@ -23,7 +23,7 @@ def upload_file():
    global predictedMaterial
    predictedMaterial = predictMaterial(path.filename);
    print("Completed: " + predictedMaterial)
-   return redirect(url_for("https://ganning127.github.io/citro-final/"), code=302)
+   return predictedMaterial
       # return 'file uploaded successfully'
 
 def predictMaterial(filename):
